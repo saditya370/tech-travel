@@ -78,3 +78,4 @@ gem 'sassc', '~> 2.0'
 gem 'ckeditor'
 gem 'sanitize'
 gem 'paperclip'
+gem "avo", ">= 3.2"

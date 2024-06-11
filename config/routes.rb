@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'blogs#index'
+  mount Ckeditor::Engine => '/ckeditor'
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users
+  resources :users
+  resources :blogs
 end

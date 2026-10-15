@@ -1,0 +1,6 @@
+<%= form.text_area method, class: 'ckeditor' %>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    CKEDITOR.replace('<%= method %>');
+  });
+</script>
